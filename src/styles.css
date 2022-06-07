@@ -1,0 +1,58 @@
+div {
+    border: 1px solid grey;
+  }
+
+.dashboard {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #374150;
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-area: dashboard;
+    grid-template-areas: 
+        "sidebar reviews rating analysis"
+        "sidebar visitors visitors visitors";
+    grid-gap: .5rem;
+}
+
+.analysis {
+    grid-area: analysis;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating {
+    grid-area: rating;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.reviews {
+    grid-area: reviews;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.visitors {
+    grid-area: visitors;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
